@@ -15,14 +15,6 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/setup', function () {
-    Artisan::call('migrate');
-    Artisan::call('storage:link');
-
-    return "Good";
-});
-
-
 // Route::get('/', function () {
 //     return Inertia::render('Home');
 // })->name('home');
