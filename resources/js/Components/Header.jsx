@@ -25,10 +25,10 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Leadership', href: '/leadership' },
-  { name: 'VPro', href: '#production' },
+  { name: 'Victorious', href: '/production' },
   { name: 'Foundation', href: '/foundation' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Shop', href: '#shop' },
+//   { name: 'Gallery', href: '#gallery' },
+  { name: 'Shop', href: '/shop' },
   { name: 'Events', href: '/events' },
   { name: 'Contact', href: '/contact' },
 ];
@@ -163,7 +163,7 @@ export default function Navigation() {
               {/* Right Section - Offering Button */}
               <div className="hidden lg:flex items-center gap-3">
                 <a
-                  href="#offering"
+                  href="/offering"
                   className="relative group overflow-hidden rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg"
                   style={{
                     background: `linear-gradient(135deg, ${brandOrange}, #ff7b33)`,

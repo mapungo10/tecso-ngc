@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -27,9 +26,13 @@ Route::get('/contact', function () {
     return Inertia::render('Contact');
 })->name('contact');
 
-Route::get('/music', function () {
-    return Inertia::render('Music');
-})->name('music');
+Route::get('/shop', function () {
+    return Inertia::render('Shop');
+})->name('shop');
+
+Route::get('/offering', function () {
+    return Inertia::render('Offering');
+})->name('offering');
 
 Route::get('/production', function () {
     return Inertia::render('Production');
